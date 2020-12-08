@@ -1,0 +1,9 @@
+version: '2.2'
+services:
+
+  techdash:
+    container_name: techdash
+    build: 
+      context: .
+    ports:
+      - "8084:8080"

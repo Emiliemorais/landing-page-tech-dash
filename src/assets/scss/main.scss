@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import "~bulma/sass/utilities/_all";
+
+$primary: #2D62ED;
+$primary-light: findLightColor($primary);
+$primary-dark: findDarkColor($primary);
+$primary-invert: findColorInvert($primary);
+
+$colors: mergeColorMaps(
+  (
+    "primary": (
+      $primary,
+      $primary-invert,
+      $primary-light,
+      $primary-dark,
+    ),
+  ), $custom-colors
+);
+
+$title-family: 'Montserrat';
+$title-color: $primary;
+
+@import "screens/landing";
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";

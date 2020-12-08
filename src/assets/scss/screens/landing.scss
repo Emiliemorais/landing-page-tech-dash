@@ -1,0 +1,15 @@
+.landing {
+  @extend .container;
+
+  &:before {
+    content: "";
+    height: 100%;
+    width: calc(50% + 10px);
+    min-height: 170px;
+    background: transparent url('assets/img/background.png') 0% 0% no-repeat padding-box;;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
