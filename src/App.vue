@@ -10,7 +10,7 @@ import LandingPage from './screens/LandingPage';
 export default {
   name: 'App',
   components: {
-    LandingPage
+    LandingPage,
   },
 };
 </script>

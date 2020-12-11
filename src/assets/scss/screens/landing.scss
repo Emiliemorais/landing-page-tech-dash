@@ -1,15 +1,143 @@
 .landing {
-  @extend .container;
+  height: 100vh;
+  flex-grow: 1;
+  position: relative;
+  width: auto;
+  padding: 70px 0;
+
+  @media screen and (min-width: 1408px) {
+    padding: 20px 0;
+  }
 
   &:before {
     content: "";
     height: 100%;
-    width: calc(50% + 10px);
+    width: 47%;
     min-height: 170px;
     background: transparent url('assets/img/background.png') 0% 0% no-repeat padding-box;;
     position: fixed;
     top: 0;
     right: 0;
     z-index: -1;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 40px 0 90px;
+
+    button {
+      font-weight: bold;
+      padding: 14px 25px;
+      width: 90%;
+      align-self: flex-end;
+    }
+  }
+
+  &__page {
+    display: flex;
+    // justify-content: space-between;
+    align-items: flex-end;
+    margin: 50px 40px 0 90px;
+  }
+
+  &__partner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    width: 208px;
+    height: 42px;
+  }
+
+  &__download {
+    width: min-content;
+    margin-right: 10%;
+  }
+
+  &__mockups {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__mockup {
+    display: flex;
+    justify-content: flex-end;
+
+    img:first-child {
+      width: 632px;
+      height: 409px;
+      margin-left: 40px;
+    }
+
+    img:nth-child(2) {
+      width: 152px;
+      height: 317px;
+      position: absolute;
+      top: 40%;
+      right: 3rem;
+    }
+  }
+
+  &__label {
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  &__title {
+    @extend .title;
+    color: $primary !important;
+    font-family: 'Montserrat';
+    margin-top: 71px;
+    width: max-content;
+  }
+
+  &__subtitle {
+    margin-top: -1.25rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: 300 !important;
+    font-family: Roboto;
+  }
+
+  &__text {
+    @extend .text;
+  }
+
+  &__button {
+    @extend .button;
+    margin: 10px 0;
+    padding: 48px;
+    white-space: normal !important;
+    text-align: left !important;
+    height: min-content !important;
+    border: 1px solid #A6A6A6;
+    border-radius: 5px;
+  }
+
+  &__footer {
+    background-color: #E8E8E8;
+    width: 100%;
+    height: 136px;
+    bottom: 0;
+    position: absolute;
+    z-index: -2;
+
+    p {
+      margin: 30px 0 0 90px;
+    }
+
+    button {
+      font-weight: bold;
+      font-size: 14px;
+      margin: 10px 0 0 90px;
+      padding: 5px 15px;
+      letter-spacing: 1.25px;
+      -webkit-box-shadow: 10px 10px 5px -8px rgba(168,168,168,1);
+      -moz-box-shadow: 10px 10px 5px -8px rgba(168,168,168,1);
+      box-shadow: 10px 10px 5px -8px rgba(168,168,168,1);
+    }
   }
 }
