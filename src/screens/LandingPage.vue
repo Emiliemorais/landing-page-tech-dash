@@ -8,27 +8,30 @@
 
         <p class="landing__text"> Para computador: </p>
 
-        <button class="landing__button is-black">
-          <img src="../assets/img/windows.svg">
-          <p> Baixe TechDash para </p>
-          <p class="button__text"> Windows </p>
-        </button>
+        <div class="landing__buttons">
+          <button class="landing__button is-black">
+            <img class="button__icon" src="../assets/img/windows.svg">
+            <div>
+              <p> Baixe TechDash para </p>
+              <p class="button__text"> Windows </p>
+            </div>
+          </button>
+        </div>
 
-        <div class="columns">
-          <div class="column">
-            <button class="landing__button is-black">
-              <div>
-                <p> Baixe TechDash para </p>
-                <p class="button__text"> macOS </p>
-              </div>
-            </button>
-          </div>
+        <div class="landing__buttons--oneline">
+          <button class="landing__button is-black">
+            <div>
+              <p class="is-size-7"> Baixe TechDash para </p>
+              <p class="button__text"> macOS </p>
+            </div>
+          </button>
 
-          <div class="column">
-            <button class="landing__button is-black">
-              Baixe TechDash para <p class="button__text"> Linux </p>
-            </button>
-          </div>
+          <button class="landing__button is-black">
+            <div>
+              <p class="is-size-7"> Baixe TechDash para </p>
+              <p class="button__text"> Linux </p>
+            </div>
+          </button>
         </div>
 
         <p class="landing__text"> Para celular: </p>
